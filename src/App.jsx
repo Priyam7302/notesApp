@@ -27,11 +27,13 @@ const App = () => {
     <div>
 
       <div className="left">
-        <textarea type="text" onChange={(e) => setInput(e.target.value)} value={input} placeholder="write note here//" />
-        <button onClick={add}>Add note</button>
-      </div>
-      <div className="middle">
-        <input type="color" onChange={(e) => setColors(e.target.value)} />
+        <div className="first">
+          <textarea type="text" onChange={(e) => setInput(e.target.value)} value={input} placeholder="write note here//" />
+          <button onClick={add}>Add note</button>
+        </div>
+        <div className="middle">
+          <input type="color" onChange={(e) => setColors(e.target.value)} />
+        </div>
       </div>
       <div className="right">
         {
